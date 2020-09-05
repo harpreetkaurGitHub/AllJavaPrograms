@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class ArrayImplementation {
 
-    int length;
-    int[] array;
+    private int length;
+    private int[] array;
 
     ArrayImplementation(int size) {
         this.length = 0;
