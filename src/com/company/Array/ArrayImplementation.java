@@ -18,6 +18,8 @@ public class ArrayImplementation {
         arrayImplementation.push(10);
         arrayImplementation.push(20);
         arrayImplementation.push(30);
+        arrayImplementation.push(40);
+        arrayImplementation.pop();
         arrayImplementation.delete(1);
         System.out.println(Arrays.toString(arrayImplementation.array));
     }
