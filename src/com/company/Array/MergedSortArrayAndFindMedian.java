@@ -2,11 +2,11 @@ package com.company.Array;
 
 import java.util.Arrays;
 
-public class MergedSortArray {
+public class MergedSortArrayAndFindMedian {
 
 
     public static void main(String[] args) {
-            int[] arr1 = {};
+            int[] arr1 = {1,3,4,31};
             int[] arr2 = {4,6,30};
             int[] mergedSortedArray = mergedSortArray(arr1,arr2);
 
@@ -38,7 +38,6 @@ public class MergedSortArray {
 
         return mergedSortArray;
     }
-
 
     public static double  findMedianOfArray(int[] sortedArray){
 
