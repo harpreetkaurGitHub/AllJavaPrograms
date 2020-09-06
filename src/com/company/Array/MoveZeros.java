@@ -22,7 +22,6 @@ public class MoveZeros {
                         if(index ==nums.length){
                             break;
                         }
-
                         flag = false;
                         i = -1;
                         nums[nums.length - 1] = 0;

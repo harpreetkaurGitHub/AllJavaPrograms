@@ -5,6 +5,8 @@ import java.util.Set;
 
 public class largestSumSubArray {
 
+
+    //todo fix find what is contiguous sub array
     public static void main(String[] args) {
         int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         System.out.println(maxSubArray(arr));
