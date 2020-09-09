@@ -6,7 +6,7 @@ public class GoogleQuesSumOfValue {
 
     public static void main(String[] args) {
 
-        int[] arr = {3, 2, 3, 14};
+        int[] arr = {3,2,4};
 
         System.out.println(Arrays.toString(twoSum(arr, 6)));
 
