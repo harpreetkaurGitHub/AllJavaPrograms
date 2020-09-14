@@ -22,6 +22,7 @@ public class ArrayImplementation {
         arrayImplementation.pop();
         arrayImplementation.delete(1);
         System.out.println(Arrays.toString(arrayImplementation.array));
+        System.out.println("hello world");
     }
 
 
