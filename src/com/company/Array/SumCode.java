@@ -13,8 +13,6 @@ public class SumCode {
                 System.out.println(array[i] + " and " + array[j]);
                 j++;
                 method(array, length,selectNum);
-
-
             }
         }
     }

@@ -2,6 +2,9 @@ package com.company.Objects;
 
 import com.company.staticFile.StaticVariableChng;
 
+import java.nio.MappedByteBuffer;
+import java.util.*;
+
 public class Main extends StaticVariableChng {
     private void Method() {
         System.out.println("HI i am main");
@@ -9,7 +12,7 @@ public class Main extends StaticVariableChng {
 
     public static void main(String[] args) {
 
-        Main obj = new Main();
+       Main obj = new Main();
         Main2 obj2 = new Main2();
         Main3 obj3 = new Main3();
 
