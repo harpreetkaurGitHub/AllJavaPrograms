@@ -16,18 +16,26 @@ public class LinkedList {
         length = 1;
     }
 
+    //Add element to tail
+    //complexity O(1)
     public void append(int value){
         Node newNode = new Node(value);
         tail.next = newNode;
         tail = newNode;
         length++;
     }
+
+    //Add element to head
+    //complexity O(1)
     public void prepend(int value){
         Node newNode = new Node(value);
         newNode.next = head;
         head = newNode;
         length++;
     }
+
+    //printing List
+    //complexity O(n)
     public int[] printList(){
         int[] list = new int[length];
         Node currentNode = this.head;
@@ -39,6 +47,9 @@ public class LinkedList {
         }
         return list;
     }
+
+    //Inserting and element to specific Index
+    //Complexity O(n)
     public void insert(int index,int value){
         Node newNode = new Node(value);
         Node leaderNode=this.head;
@@ -50,6 +61,9 @@ public class LinkedList {
         newNode.next = holdingPointer;
         length++;
     }
+
+    //remove element from specific index
+    //Complexity O(n)
     public void remove(int index){
         Node leader = this.head;
         for(int i =0;i<index -1;i++){
