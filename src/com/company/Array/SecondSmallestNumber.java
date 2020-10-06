@@ -16,7 +16,6 @@ public class SecondSmallestNumber {
             if (smallest > array[i]) {
                 secondSmallest = smallest;
                 smallest = array[i];
-
             }
         }
         System.out.println("smallest number is : " + smallest +"\nsecond smallest Number is : " + secondSmallest);
