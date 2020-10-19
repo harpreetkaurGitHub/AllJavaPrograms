@@ -31,7 +31,7 @@ public class InsertionSort {
         System.out.println(Arrays.toString(array));
     }
     public static void main(String[] args) {
-        int[] array = {2,5,8,11,77,44,6,822,77} ;
+        int[] array = {4,3,1,2} ;
         method(array);
     }
 }
