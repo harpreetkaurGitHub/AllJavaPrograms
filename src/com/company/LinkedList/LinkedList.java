@@ -4,13 +4,14 @@ package com.company.LinkedList;
 import java.util.Arrays;
 
 public class LinkedList {
+
     private Node head;
     private Node tail;
     private int length;
 
 
     //on very very first element head is the tail because there is only one element in linkedList
-    public LinkedList(int value){
+    public LinkedList(int value) {
         this.head = new Node(value);
         tail = head;
         length = 1;
@@ -18,7 +19,7 @@ public class LinkedList {
 
     //Add element to tail
     //complexity O(1)
-    public void append(int value){
+    public void append(int value) {
         Node newNode = new Node(value);
         tail.next = newNode;
         tail = newNode;
@@ -27,7 +28,7 @@ public class LinkedList {
 
     //Add element to head
     //complexity O(1)
-    public void prepend(int value){
+    public void prepend(int value) {
         Node newNode = new Node(value);
         newNode.next = head;
         head = newNode;
@@ -36,11 +37,11 @@ public class LinkedList {
 
     //printing List
     //complexity O(n)
-    public int[] printList(){
+    public int[] printList() {
         int[] list = new int[length];
         Node currentNode = this.head;
         int i = 0;
-        while (currentNode!=null){
+        while (currentNode != null) {
             list[i] = currentNode.data;
             currentNode = currentNode.next;
             i++;
@@ -50,12 +51,13 @@ public class LinkedList {
 
     //Inserting and element to specific Index
     //Complexity O(n)
-    public void insert(int index,int value){
+    public void insert(int index, int value) {
         Node newNode = new Node(value);
-        Node leaderNode=this.head;
-        for(int i =0;i<index-1;i++){
+        Node leaderNode = this.head;
+        for (int i = 0; i < index - 1; i++) {
             leaderNode = leaderNode.next;
         }
+        //bucket exchange
         Node holdingPointer = leaderNode.next;
         leaderNode.next = newNode;
         newNode.next = holdingPointer;
@@ -64,13 +66,29 @@ public class LinkedList {
 
     //remove element from specific index
     //Complexity O(n)
-    public void remove(int index){
+    public void remove(int index) {
         Node leader = this.head;
-        for(int i =0;i<index -1;i++){
+        for (int i = 0; i < index - 1; i++) {
             leader = leader.next;
         }
         leader.next = leader.next.next;
         length--;
+    }
+
+    //reverse LinkedList
+    //Complexity O(n)
+    public void reverse() {
+        Node firstNode = head;
+        tail = head;
+        Node secondNode = head.next;
+        for (int i = 0; i < length-1; i++) {
+                Node tempNode = secondNode.next;
+            secondNode.next = firstNode;
+            firstNode = secondNode;
+            secondNode = tempNode;
+        }
+        head.next = null;
+        head = firstNode;
     }
 
     public static void main(String[] args) {
@@ -88,12 +106,16 @@ public class LinkedList {
 
         linkedList.insert(2, 100);
         linkedList.remove(3);
+        System.out.println("::::::: BEFORE Reverse :::::");
+        System.out.println(Arrays.toString(linkedList.printList()));
+
+        System.out.println("::::::::::: AFTER REVERSE :::::::::::::");
+        linkedList.reverse();
 //        linkedList.prepend(/70);
 //        linkedList.prepend(80);
 
         System.out.println(Arrays.toString(linkedList.printList()));
 
     }
-
 
 }

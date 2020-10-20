@@ -2,10 +2,10 @@ package com.company.LinkedList;
 
 public class Node {
 
-     int data;
+    int data;
     Node next;
 
-    public  Node(int data){
+    public Node(int data) {
         this.data = data;
         this.next = null;
     }
