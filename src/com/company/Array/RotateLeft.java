@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class RotateLeft{
 
     public static int[] getRotateArr(int[] array,int times,int target){
-
         if (times!=target){
             times++;
             int lastElement = array[array.length-1];
