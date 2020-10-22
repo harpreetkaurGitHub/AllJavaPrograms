@@ -2,7 +2,7 @@ package com.company.Array;
 
 import java.util.Arrays;
 
-public class ShiftZerosToLeft {
+public class ShiftZerosToEnd {
 
     public static void method(int[] array){
         int[] arrayTwo = new int[array.length];
