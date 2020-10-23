@@ -3,16 +3,16 @@ package com.company.Array;
 public class FirstRepeatingElement {
 
     public static int method(int[] array){
-        int nonRepeated =0;
+        int firstRepeated =0;
         for ( int i=0;i<array.length-1;i++) {
             for (int j=1;j<array.length-1;j++) {
                 if (array[i] == array[j] && i!=j) {
-                    nonRepeated = array[i];
+                    firstRepeated = array[i];
                     break;
                 }
             }
         }
-        return nonRepeated;
+        return firstRepeated;
     }
 
     public static void main(String[] args) {
