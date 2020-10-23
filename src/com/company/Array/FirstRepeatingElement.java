@@ -1,22 +1,29 @@
 package com.company.Array;
 
+import java.util.HashSet;
+
 public class FirstRepeatingElement {
 
-    public static int method(int[] array){
-        int firstRepeated =0;
-        for ( int i=0;i<array.length-1;i++) {
-            for (int j=1;j<array.length-1;j++) {
-                if (array[i] == array[j] && i!=j) {
-                    firstRepeated = array[i];
-                    break;
-                }
+    public static void method(int[] array) {
+        int firstRepeated =-1;
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int i=array.length-1; i>=0; i--) {
+            if (set.contains(array[i])) {
+                firstRepeated = i;
+            }else {
+                set.add(array[i]);
             }
         }
-        return firstRepeated;
-    }
-
+        if (firstRepeated!=-1){
+            System.out.println(array[firstRepeated]);
+        }
+        else {
+            System.out.println("not repeating elements");
+        }
+        }
     public static void main(String[] args) {
-        int[] array = {10, 5, 3, 4, 3, 5, 6};
-        System.out.println(method(array));
+        int[] array = {10,3, 5, 3, 4, 3, 5, 6};
+        method(array);
     }
 }
