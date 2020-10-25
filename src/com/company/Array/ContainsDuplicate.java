@@ -13,7 +13,6 @@ public class ContainsDuplicate {
         System.out.println(containsDuplicateWithoutCollection(arr));
     }
     public static boolean containsDuplicate(int[] nums) {
-
         Set<Integer> set =  new HashSet<>();
         for(int num:nums){
             if(set.add(num) ==false){
