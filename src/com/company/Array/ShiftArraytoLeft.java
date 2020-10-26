@@ -15,7 +15,7 @@ public class ShiftArraytoLeft {
     }
 
     public static void main(String[] args) {
-        int[] array = {1,3,5,2,8,7,20,4};
-        method(array,6);
+        int[] array = {1,3,5,2,8,7,4};
+        method(array,2);
     }
 }

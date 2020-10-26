@@ -31,6 +31,5 @@ public class GoogleQuesSumOfValue {
             }
         }
         return arr;
-
     }
 }

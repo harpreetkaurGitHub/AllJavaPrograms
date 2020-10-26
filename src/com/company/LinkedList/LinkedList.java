@@ -81,8 +81,8 @@ public class LinkedList {
         Node firstNode = head;
         tail = head;
         Node secondNode = head.next;
-        for (int i = 0; i < length-1; i++) {
-                Node tempNode = secondNode.next;
+        for (int i = 0; i < length - 1; i++) {
+            Node tempNode = secondNode.next;
             secondNode.next = firstNode;
             firstNode = secondNode;
             secondNode = tempNode;
