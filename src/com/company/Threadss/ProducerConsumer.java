@@ -34,6 +34,7 @@ public class ProducerConsumer {
     }
 
     public static void main(String[] args) throws InterruptedException {
+
         final ProducerConsumer obj = new ProducerConsumer();
         Thread thread1 = new Thread(new Runnable() {
             @Override
