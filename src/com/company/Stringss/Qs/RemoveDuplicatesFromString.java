@@ -9,12 +9,16 @@ public class RemoveDuplicatesFromString {
             if (str.indexOf(c)<0) {
                 str += c;
             }
+            else {
+                System.out.print(c);
+            }
         }
-        return str;
+        System.out.println(" : duplicates");
+        return "Removed duplicates :: "+str;
     }
 
     public static void main(String[] args) {
-        String string = "codecode";
+        String string = "code of the duplicates";
         System.out.println(method(string));
     }
 }
