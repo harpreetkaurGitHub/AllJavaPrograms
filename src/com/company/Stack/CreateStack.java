@@ -28,7 +28,5 @@ public class CreateStack {
         System.out.println(obj.peek());
         System.out.println(obj.pop());
         System.out.println(obj.peek());
-
-
     }
 }
