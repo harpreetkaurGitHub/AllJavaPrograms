@@ -28,7 +28,8 @@ public class ReverseTheWordsInSentance {
             return reverse.toString().trim();
         }
     public static void main(String args[]) {
-            reverseWords("hello");
-            reverseString("hello how are you");
+        System.out.println(reverseWords("how are you"));
+        System.out.println(reverseWords("how are you"));
+        System.out.println(reverseString("hello how are you"));
     }
     }
