@@ -1,5 +1,7 @@
 package com.company.Stack.Revision;
 
+import java.util.Arrays;
+
 public class StackArray {
     int max = 10;
     int[] array = new int[max];
@@ -28,6 +30,7 @@ public class StackArray {
         }
         return array[topElement];
     }
+
     public static void main(String[] args) {
         StackArray stackArray = new StackArray();
         stackArray.push(10);

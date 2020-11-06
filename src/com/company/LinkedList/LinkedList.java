@@ -71,6 +71,7 @@ public class LinkedList {
         for (int i = 0; i < index - 1; i++) {
             leader = leader.next;
         }
+
         leader.next = leader.next.next;
         length--;
     }
@@ -104,17 +105,17 @@ public class LinkedList {
             linkedList.prepend(40);
         }).start();*/
 
-        linkedList.insert(2, 100);
-        linkedList.remove(3);
+//        linkedList.insert(2, 100);
+//        linkedList.remove(3);
         System.out.println("::::::: BEFORE Reverse :::::");
         System.out.println(Arrays.toString(linkedList.printList()));
 
-        System.out.println("::::::::::: AFTER REVERSE :::::::::::::");
-        linkedList.reverse();
+//        System.out.println("::::::::::: AFTER REVERSE :::::::::::::");
+//        linkedList.reverse();
 //        linkedList.prepend(/70);
 //        linkedList.prepend(80);
 
-        System.out.println(Arrays.toString(linkedList.printList()));
+//        System.out.println(Arrays.toString(linkedList.printList()));
 
     }
 
