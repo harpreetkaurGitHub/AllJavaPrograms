@@ -1,7 +1,5 @@
 package com.company.InterviewQues;
 
-import com.company.Loops.ForEach;
-
 public class FirstMissingPositive {
 
     public static void main(String[] args) {

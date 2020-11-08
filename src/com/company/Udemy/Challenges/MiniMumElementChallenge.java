@@ -1,7 +1,5 @@
 package com.company.Udemy.Challenges;
 
-import com.company.constructor.A;
-
 import java.util.Scanner;
 
 public class MiniMumElementChallenge {
