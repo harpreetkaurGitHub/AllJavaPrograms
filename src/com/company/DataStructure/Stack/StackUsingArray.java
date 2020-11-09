@@ -1,4 +1,4 @@
-package com.company.DataStructure.Stack;
+package com.company.Stack;
 
 import java.util.Arrays;
 
@@ -14,7 +14,7 @@ public class StackUsingArray {
 
     public int peek() {
         if (topElement < 0) {
-            throw new StackOverflowError("Stack Under Flow");
+            throw new StackOverflowError("Stack Overflow");
         }
         return stackArray[topElement];
     }
@@ -34,14 +34,20 @@ public class StackUsingArray {
         int pop = stackArray[topElement--];
         return pop;
     }
+
     public static void main(String[] args) {
         StackUsingArray stackUsingArray = new StackUsingArray();
-        stackUsingArray.push(0);
+        stackUsingArray.push(10);
         stackUsingArray.push(20);
         stackUsingArray.push(30);
         stackUsingArray.push(40);
-        System.out.println("Peek Before : "+stackUsingArray.peek());
+        stackUsingArray.push(50);
+        stackUsingArray.push(60);
+        stackUsingArray.push(60);
+        stackUsingArray.push(70);
+        stackUsingArray.push(80);
+        System.out.println(stackUsingArray.peek());
         stackUsingArray.pop();
-        System.out.println("Peek After : "+stackUsingArray.peek());
+        System.out.println(stackUsingArray.peek());
     }
 }
