@@ -41,6 +41,8 @@ public class StackUsingArray {
         stackUsingArray.push(20);
         stackUsingArray.push(30);
         stackUsingArray.push(40);
+        stackUsingArray.push(50);
+        stackUsingArray.push(60);
         System.out.println(stackUsingArray.peek());
         stackUsingArray.pop();
         System.out.println(stackUsingArray.peek());
