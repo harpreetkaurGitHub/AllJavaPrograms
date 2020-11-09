@@ -1,4 +1,4 @@
-package com.company.DataStructure.LinkedList;
+package com.company.DataStructure.LinkedList.SingleLinkList;
 
 public class LinkedListPractise {
 

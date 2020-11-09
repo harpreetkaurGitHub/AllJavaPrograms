@@ -1,4 +1,4 @@
-package com.company.DataStructure.LinkedList;
+package com.company.DataStructure.LinkedList.SingleLinkList;
 
 import java.util.Arrays;
 
@@ -30,7 +30,6 @@ public class CRUDlinklist {
         currentNode.next  = inserNode;
         inserNode.next = holdingNode;
         length++;
-
     }
 
     public void removeNode(int index){

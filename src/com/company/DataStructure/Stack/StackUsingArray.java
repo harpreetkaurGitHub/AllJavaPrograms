@@ -1,8 +1,10 @@
 package com.company.DataStructure.Stack;
 
+import java.util.Arrays;
+
 public class StackUsingArray {
 
-    private int max = 1000;
+    private final int max = 1000;
     private int[] stackArray = new int[max];
     private int topElement;
 
@@ -18,11 +20,12 @@ public class StackUsingArray {
     }
 
     public void push(int value) {
-        if (topElement >= (max-1)) {
+        if (topElement >= (max - 1)) {
             throw new StackOverflowError("Stack OverFlow");
         }
         stackArray[++topElement] = value;
     }
+
 
     public int pop() {
         if (topElement <= 0) {
