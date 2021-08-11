@@ -9,9 +9,9 @@ public class RemoveIndex {
         int arr1[] = new int[arr.length];
 
         try{
-            for (int i=0 ; i<arr.length ; i++) {
+            for (int i=0 ; i<arr.length ; i++){
 
-                if(i!=removeNum) {
+                if(i!=removeNum){
 
                     arr1[i] = arr[i];
                     System.out.println(arr1[i]);

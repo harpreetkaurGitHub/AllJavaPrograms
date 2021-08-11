@@ -12,6 +12,7 @@ public class RemoveCharFromString {
             if (Objects.isNull(value) || value.isEmpty()) {
                 throw new NullPointerException("Null or empty string");
             }
+
             String[] split = value.split(" ");
             finalValue = split[1];
             inputValue = split[0].toCharArray();

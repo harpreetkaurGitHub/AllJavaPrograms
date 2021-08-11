@@ -1,4 +1,4 @@
-package com.company.Collectionss.ArrayListss;
+package com.company.Collectionss.ArrayListss.All;
 
 public class Sorting {
 
@@ -27,7 +27,6 @@ public class Sorting {
     }
 
     public static void main(String[] args) {
-
         method();
     }
 

@@ -1,4 +1,4 @@
-package com.company.Collectionss.ArrayListss;
+package com.company.Collectionss.ArrayListss.All;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

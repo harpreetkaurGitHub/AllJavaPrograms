@@ -2,21 +2,28 @@ package com.company.Practice;
 
 public class Palindrome {
 
-    public static void palindrom(){
-        String string = "abba"; String number = "1010110101"; int j = number.length()-1,i=0;
+    public static boolean palindrom(){
+        String string = "afgbba"; String number = "101010";
+        int j = number.length()-1,i=0;
+        boolean isPalindrom = false;
            while (i<j) {
                if(number.charAt(i) == number.charAt(j)){
-                   System.out.println("This is palindrome");
+                   isPalindrom = true;
                    j--;i++;
                }
                else {
-                   System.out.println("This is not a palindrome");
+                   isPalindrom = false;
+                   i++;j--;
                }
            }
+           if (isPalindrom){
+               return true;
+           }
+           return false;
     }
 
     public static void main(String[] args) {
-        palindrom();
+        System.out.println(palindrom());
     }
 }
 

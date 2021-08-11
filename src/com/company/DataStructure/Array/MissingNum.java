@@ -11,11 +11,22 @@ public class MissingNum {
         return total;
     }
 
+    static int getMissingNo(int a[], int n)
+    {
+        int total = 1;
+        for (int i = 2; i <= (n + 1); i++)
+        {
+            total += i;
+            total -= a[i - 2];
+        }
+        return total;
+    }
 
     public static void main(String[] args) {
 
         int a[] = {1, 2, 3, 4, 5, 7, 8, 9 };
         int missingNum = getMissingNum(a, a.length);
         System.out.println(missingNum);
+        System.out.println(getMissingNo(a,a.length));
     }
 }

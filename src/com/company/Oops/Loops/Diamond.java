@@ -16,10 +16,10 @@ public class Diamond {
             }
             System.out.println();
         }
-        System.out.println(" ");
+//        System.out.println(" ");
 
-        for (row=4 ; row<=num+3 ; row++) {
-            for (space=num ; space>=row-3 ; space--) {
+        for (row=1 ; row<=num ; row++) {
+            for (space=num ; space>=row ; space++) {
                 System.out.print(" ");
             }
             for (triangl1=1 ; triangl1<=row-3 ; triangl1++) {

@@ -25,7 +25,7 @@ public class MostFrequentElement {
         for (Map.Entry<Integer,Integer> entry : set) {
             if (entry.getValue() > frequency) {
                 element = entry.getKey();
-                frequency = entry.getValue();
+                frequency ++;
             }
         }
         if (frequency > 1) {

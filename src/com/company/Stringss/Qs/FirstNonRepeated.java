@@ -32,7 +32,7 @@ public class FirstNonRepeated {
     }
 
     public static void main(String[] args) {
-        method("ITS TOO HOT HERE");
+        System.out.println(method("IITS TOO HOT HERE"));
 
     }
 }

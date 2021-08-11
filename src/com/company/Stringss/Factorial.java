@@ -34,7 +34,7 @@ public class Factorial {
 
     public static void main(String[] args) {
 
-        factorialMethod(5,1);
+        System.out.println(factorialMethod(5,1));;
 
     }
 }

@@ -20,11 +20,10 @@ public class ContainsDuplicate {
     return false;
     }
 
-
     public static boolean containsDuplicateWithoutCollection(int[] nums) {
         int index = 0;
         int loop =1;
-        for(int i =loop;i<=nums.length-1;i++){
+        for(int i =loop;i<=nums.length-1;i++) {
                 if(nums[index] ==nums[i]){
                     System.out.println("duplicate number is "+nums[index]);
                 }
